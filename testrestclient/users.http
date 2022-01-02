@@ -1,0 +1,76 @@
+### LOGIN
+### LOGIN
+### LOGIN
+
+
+### LOGIN
+POST http://127.0.0.1:3000/users/login
+Content-Type: application/json
+
+	{
+		"login": "luis@peris.com",
+		"password": "123456"
+	}
+
+
+### TEST
+GET http://127.0.0.1:3000/users/test
+Content-Type: application/json
+token: 04104be18cba3c2e3d4e75cec30e5ec739458ea0
+
+	{
+		"login": "luisa@peris.com",
+		"password": "123456"
+	}
+
+
+### INFO
+GET http://127.0.0.1:3000/users/info
+Content-Type: application/json
+token: 04104be18cba3c2e3d4e75cec30e5ec739458ea0
+
+	{
+		"login": "luis@peris.com",
+		"password": "123456"
+	}
+
+
+
+### ADD
+POST http://127.0.0.1:3000/users/add
+Content-Type: application/json
+token: 04104be18cba3c2e3d4e75cec30e5ec739458ea0
+
+	{
+		"email": "luiasa@peris.com",
+		"first_name": "Luis",
+		"password": "123456"
+	}
+
+
+
+### EDIT
+PUT http://127.0.0.1:3000/users/edit
+Content-Type: application/json
+token: 04104be18cba3c2e3d4e75cec30e5ec739458ea0
+
+	{
+		"first_name": "Luisitso"
+	}
+
+
+### DELETE
+DELETE http://127.0.0.1:3000/users/delete
+Content-Type: application/json
+token: 1011-04104be18cba3c2e3d4e75cec30e5ec739458ea0
+
+
+### CHANGE_PASSWORD
+PUT http://127.0.0.1:3000/users/change_password
+Content-Type: application/json
+token: 04104be18cba3c2e3d4e75cec30e5ec739458ea0
+
+{
+	"old_password":"1234567",
+	"new_password":"123456"
+}
